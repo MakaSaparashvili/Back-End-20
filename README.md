@@ -24,11 +24,13 @@ def post_list(request):
     return render(request, 'posts/list.html', {'posts': posts})
     
 Your Task
+
 -Model Test
 
 Write a test for short_title():
 
  1.If title is less than 10 characters → returns full title.
+ 
  2.If more → returns first 10 characters plus "...".
  
 -View Test
@@ -36,4 +38,5 @@ Write a test for short_title():
 Write a test that checks:
 
  1.The /posts/ page returns status code 200.
+ 
  2.It contains the title of a blog post you've created in test setup.
