@@ -23,15 +23,16 @@ def post_list(request):
     posts = BlogPost.objects.all()
     return render(request, 'posts/list.html', {'posts': posts})
 ✅ Your Task
-Model Test
+ Model Test
 
 Write a test for short_title():
 
-If title is less than 10 characters → returns full title.
-If more → returns first 10 characters plus "...".
-View Test
+ If title is less than 10 characters → returns full title.
+ If more → returns first 10 characters plus "...".
+ 
+ View Test
 
 Write a test that checks:
 
-The /posts/ page returns status code 200.
-It contains the title of a blog post you've created in test setup.
+ The /posts/ page returns status code 200.
+ It contains the title of a blog post you've created in test setup.
